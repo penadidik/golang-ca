@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 	"user-service/model"
-	"github.com/penadidik/golang-ca/user-service/repository/mocks"
+	"user-service/repository/mocks"
 	"user-service/usecase"
 
 	"github.com/stretchr/testify/assert"
