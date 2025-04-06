@@ -6,29 +6,6 @@ root/
 └── README.md
 ```
 
----
-
-## 📘 `README.md` – Modular Go Microservices (User)
-
-```markdown
-# 🧩 Go Modular Microservices: User & Product Service
-
-This project contains two modular microservices built with Golang:
-
-- 📦 `user-service`: CRUD for users using MongoDB
-
-Each service is a **standalone Go module**, following **Clean Architecture** and using **MongoDB** for persistence.
-
----
-
-## ⚙️ Requirements
-
-- Go 1.21+
-- Docker & Docker Compose
-- Git (optional, but recommended)
-
----
-
 ## 📁 Project Structure
 
 ```
