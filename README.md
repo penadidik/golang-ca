@@ -3,13 +3,12 @@ Here’s a complete and clean `README.md` that guides you from **zero to running
 ```
 root/
 ├── user-service/
-├── product-service/
 └── README.md
 ```
 
 ---
 
-## 📘 `README.md` – Modular Go Microservices (User & Product Service)
+## 📘 `README.md` – Modular Go Microservices (User)
 
 ```markdown
 # 🧩 Go Modular Microservices: User & Product Service
@@ -17,7 +16,6 @@ root/
 This project contains two modular microservices built with Golang:
 
 - 📦 `user-service`: CRUD for users using MongoDB
-- 📦 `product-service`: CRUD for products (structure only)
 
 Each service is a **standalone Go module**, following **Clean Architecture** and using **MongoDB** for persistence.
 
@@ -43,8 +41,6 @@ root/
 │   ├── repository/
 │   ├── usecase/
 │   └── go.mod
-├── product-service/
-│   └── ... (similar structure)
 └── docker-compose.yml
 ```
 
@@ -55,8 +51,8 @@ root/
 ### 1. Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/go-microservices.git
-cd go-microservices
+git clone https://github.com/PENADIDIK/golang-ca.git
+cd golang-ca
 ```
 
 ---
@@ -89,14 +85,6 @@ go run ./user-service/cmd/main.go
 
 Access: [http://localhost:8080/users](http://localhost:8080/users)
 
-#### 🔹 Run Product Service
-
-```bash
-go run ./product-service/cmd/main.go
-```
-
-Access: [http://localhost:8081/products](http://localhost:8081/products)
-
 ---
 
 ### 4. API Example (User Service)
@@ -123,7 +111,6 @@ curl http://localhost:8080/users
 
 ```bash
 make run-user
-make run-product
 ```
 
 ### Rebuild & Run All with Docker Compose
@@ -142,8 +129,7 @@ Each service can have its own `*_test.go` files and be tested individually:
 cd user-service
 go test ./...
 
-cd ../product-service
-go test ./...
+
 ```
 
 ---
@@ -167,7 +153,7 @@ docker rm mongodb
 
 ## 👨‍💻 Author
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [PENADIDIK](https://github.com/penadidik)
 
 ```
 
